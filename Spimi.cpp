@@ -17,7 +17,7 @@
 namespace eneskilicaslan_au_spimi{
 
 Spimi::Spimi(const string &token_stream_path) : min_memory(60000) {
-    this->token_stream_path = "/home/parallels/Desktop/_SPIMI_/token_list.txt"; //token_stream_path;
+    this->token_stream_path = "./token_list.txt"; //token_stream_path;
     output_file_name = ""; //it can be out0.txt or out1.txt !! demo
 }
 
@@ -33,7 +33,7 @@ void Spimi::run()
 	start = clock(); //start timer
 	//run spimi algorithm
 	cout << "****Single Pass in Memory Indexer started**********" << endl;
-	//spimi();
+	spimi();
 	duration_indexer = ( std::clock() - start ) / (double) CLOCKS_PER_SEC; //finish timer indexing
 	cout << "Indexing is Done in " << number_to_string(duration_indexer) << " seconds.." << endl;
 
