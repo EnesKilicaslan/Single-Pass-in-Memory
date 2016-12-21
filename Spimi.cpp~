@@ -18,7 +18,7 @@ namespace eneskilicaslan_au_spimi{
 
 Spimi::Spimi(const string &token_stream_path) : min_memory(60000) {
     this->token_stream_path = "/home/parallels/Desktop/_SPIMI_/token_list.txt"; //token_stream_path;
-    output_file_name = ""; //it can be out0.txt or out1.txt !! demo
+    output_file_name = "out0.txt"; //it can be out0.txt or out1.txt !! demo
 }
 
 long int Spimi:: getMin_memory() const {
