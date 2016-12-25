@@ -3,14 +3,14 @@
 
 Usage	
 In the files, There is run.sh which contains running Tokenization and Compile and run process. 
-If you call ./run.sh from your terminal, Tokenization part will start and you will be prompted to enter path of collection.
+If you call ./run.sh from your terminal, Tokenization part will start and you will be prompted to enter path of your collection.
 After tokenization  part completed, indexer will start. And at the end you will be able to answer Boolean queries. 
 
 Requirements
 
 Python 2.7
 
-This is because of tokenization part, I am using htmllib standard [1] library 	
+This is because of tokenization part, I am using htmllib standard library 	
 from Python 2.7 to tokenize the collection and turning it into a stream of tokens file 	
 named “token_list.txt” and file name and doc-id pair in the file named 	“file_number.txt”.
 	
